@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       y: 0
     },
     methods: {
-      countUp: function() {
-        this.number += 1
+      countUp: function(times) {
+        this.number += 1 * times
       },
       mousePosition: function(event) {
         this.x = event.clientX;
