@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       mousePosition: function(event) {
         this.x = event.clientX;
         this.y = event.clientY;
+      },
+      enterAlert: function() {
+        alert("enter押したな！");
       }
     }
   })
