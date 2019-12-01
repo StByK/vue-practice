@@ -19,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       },
       enterAlert: function() {
         alert("enter押したな！");
+      },
+    },
+    computed: {
+      lessThanTen: function() {
+        return this.number > 10 ? "10より大きい" : "10以下"
       }
     }
   })
