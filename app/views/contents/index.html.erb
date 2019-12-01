@@ -4,7 +4,7 @@
   <a v-bind:href = "url">google</a>
   <a :href = "url">google</a>
   <a v-on:click.prevent href = "url">google飛ばないよ</a>
-  <button v-on:click = "countUp(1)">click it</button>
+  <button @click = "countUp(1)">click it</button>
   <button v-on:click = "countUp(2)">click it double!</button>
   <p v-on:mousemove = "mousePosition" >mouse move
   <span v-on:mousemove.stop>don't move</span>
