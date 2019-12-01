@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     computed: {
       lessThanTen: function() {
         return this.number > 10 ? "10より大きい" : "10以下"
+      },
+    },
+    watch: {
+      number: function() {
+        var vm = this;
+        setTimeout(function(){
+          vm.number = 0
+        }, 3000)
       }
     }
   })
