@@ -3,6 +3,7 @@
   <input type="text" v-model="message">
   <p>{{number}}(3秒でリセット)</p>
   <p>{{lessThanTen}}</p>
+  <p v-if="number>10">ok</p>
   <a v-bind:href = "url">google</a>
   <a :href = "url">google</a>
   <a v-on:click.prevent href = "url">google飛ばないよ</a>
