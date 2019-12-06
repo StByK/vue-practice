@@ -3,6 +3,7 @@
   <input type="text" v-model="message">
   <p>{{number}}(3秒でリセット)</p>
   <p>{{lessThanTen}}</p>
+  <p v-show="number>10">ok</p>
   <p v-if="number>10">ok</p>
   <p v-else-if="number>5">soso</p>
   <p v-else="number>10">not ok</p>
