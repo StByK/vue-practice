@@ -35,4 +35,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   })
+
+  new Vue({
+    el: 'test',
+  })
 })
