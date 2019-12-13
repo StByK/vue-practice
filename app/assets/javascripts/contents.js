@@ -37,6 +37,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   })
 
   new Vue({
-    el: 'test',
+    el: '#test',
+    data: {
+      choice: ""
+    },
+    methods: {
+      choiceWord: function(event) {
+        this.choice = event.target.innerText;
+      }
+    }
   })
 })
