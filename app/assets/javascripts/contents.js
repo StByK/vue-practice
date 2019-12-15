@@ -53,8 +53,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
     computed: {
       checkAnswer: function() {
-        return this.answer == this.correctAnswer ? "correct" : "not correct"
+        return this.answer == this.correctAnswer ? "access granted" : "access denied"
       },
+      compareWithCorrectAnswer: function() {
+        var answer = this.answer.split("");
+        var correctAnswer = this.correctAnswer.split("");
+        var characterCount = 0;
+        for (var i = 0; i <= answer.length-1; i++) {
+          if(answer[i] == correctAnswer[i]) {
+            characterCount++;
+          }
+        }
+        return characterCount;
+      }
     }
   })
 })
