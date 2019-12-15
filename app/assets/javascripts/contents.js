@@ -39,17 +39,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
   new Vue({
     el: '#test',
     data: {
-      choice: "",
-      answer: "sample",
+      word: "",
+      answer: "",
+      correctAnswer: "sample"
     },
     methods: {
+      lookingWord: function(event) {
+        this.word = event.target.innerText;
+      },
       choiceWord: function(event) {
-        this.choice = event.target.innerText;
-      }
+        this.answer = event.target.innerText;
+      },
     },
     computed: {
       checkAnswer: function() {
-        return this.choice == this.answer ? "correct" : "not correct"
+        return this.answer == this.correctAnswer ? "correct" : "not correct"
       },
     }
   })

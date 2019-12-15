@@ -24,8 +24,9 @@
 <div id='test'>
   <p>ROBCO INDUSTRIES (TM) TERMINAL LINK PROTOCOL</p>
   <p>ENTER PASSWORD NOW</p>
-  <p v-on:mousemove = "choiceWord">sample</p>
-  <p v-on:mousemove = "choiceWord">sample2</p>
-  <p>{{choice}}</p>
+  <p @mousemove = "lookingWord" @click = "choiceWord">sample</p>
+  <p @mousemove = "lookingWord" @click = "choiceWord">sample2</p>
+  <p>選択中：{{word}}</p>
+  <p>あなたの答え：{{answer}}</p>
   <p>{{checkAnswer}}</p>
 </div>
